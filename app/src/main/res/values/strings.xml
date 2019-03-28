@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WIFI_P2P_Camera</string>
+    <string name="connect">Connect</string>
+    <string name="scan">Scan</string>
+</resources>

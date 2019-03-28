@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alansio.wifi_p2p_camera.ControlActivity">
+
+    <TableLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual " />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/take_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take photo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto" />
+
+            <TextView
+                android:id="@+id/timebarValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/autotakeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AUTO TAKE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/timebar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:max="9"
+                    android:progress="3" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/stopautoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STOP AUTO"
+                android:visibility="invisible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record Video" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/startRecordBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="START RECORD" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/stopRecordBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STOP RECORD"
+                android:visibility="invisible" />
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
